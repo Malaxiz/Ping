@@ -8,6 +8,7 @@ import socket
 def generate_ips(range_start, range_end):
     return {"192.168.1."+str(ip): False for ip in range(range_start, range_end)}
 
+
 # credit: https://stackoverflow.com/users/416467/kindall
 class ThreadWithReturnValue(Thread):
     def __init__(self, group=None, target=None, name=None,
