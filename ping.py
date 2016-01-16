@@ -22,6 +22,7 @@ class ThreadWithReturnValue(Thread):
         Thread.join(self)
         return self._return
 
+
 def ping(ip):
     call = subprocess.Popen(
         ["ping", "-c", "1", ip],
